@@ -1,106 +1,108 @@
 *{
      margin: 0;
      padding: 0;
-     box-sizing: border-box;
+     font-family: 'Times New Roman', Times, serif;
 }
 
-body{
-     background-image: url('../css/images/pexels-magda-ehlers-985266.jpg');
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-attachment: fixed;
-
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     font-size: 0.9em;
-
-}
-
-h1{
-     color: aqua;
-     font-size: 60px;
-     text-align: center;
-     border-style: double;
-     border-color: #0324fa;
-     margin-top: -25%;
-     margin-left: 40%;
-     
-}
-
-nav{
-     background-color: rgb(45, 146, 160);
+.container{
      width: 100%;
-     position: absolute;
-     margin-top: -70px;
-     border-bottom: 4px solid;
-     rgba(255,2,102,0.7);
-     opacity: 0.5;
+     height: 100vh;
+     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('images/pexels-marta-branco-1194713.jpg');
+     background-position: center;
+     background-size: cover;
+     padding-left: 8%;
+     padding-right: 8%;
+     box-sizing: border-box;
+     
 }
 
 .navbar{
-     display: inline-block;
-     
-     font-size: 40px;
-     color: #fff;
-     text-decoration: none;
-     margin-left: 5%;
-     padding: 20px;
-     margin-top: 1px;
-
-
+     height: 12%;
+     display: flex;
+     align-items: center;
 }
 
-nav ul{
-     float: right;
-     margin-right: 10%;
-     text-decoration: solid;
+.logo{
+     width: 50px;
+     cursor: pointer;
+}
+
+/*.menu-icon{
+     width: 30px;
+     cursor: pointer;
+}*/
+
+nav{
+     flex: 1;
+     text-align: right;
 }
 
 nav ul li{
+     list-style: none;
      display: inline-block;
-     padding: 14;
-     text-decoration: solid;
+     margin-left: 60px;
 }
 
+nav ul li a{
+     text-decoration: none;
+     color: azure;
+     font-size: 13px;
+}
+
+.row{
+     display: flex;
+     height: 88%;
+     align-items: center;
+}
+
+.col{
+     flex-basis: 50%;
+}
+
+h1{
+     color:#fff;
+     font-size: 50px;
+}
+
+p{
+     color: #fff;
+     font-size: 20px;
+     line-height: 15px;
+
+}
 
 .card{
-     position: relative;
-     background-color: rgba(255,255,255,0.1);
-     box-shadow: 0 5px 15px rgba(0,0, 0, 0.5);
-     height: 300px;
-     width: 600px;
-     margin-top: 350px;
-     margin-right: 20px;
-     
-     
-
+     width: 200px;
+     height: 230px;
+     display: inline-block;
+     border-radius: 10px;
+     padding: 15px 25px;
+     box-sizing: border-box;
+     cursor: pointer;
+     margin: 10px 15px;
+     background-image: url(images/html.jpg);
+     background-position: center;
+     background-size: cover;
+     transition: transform 0.5s;
 }
 
-.card:hover .gradient{
-     opacity: 1;
-
+.card1{
+     background-image: url(images/html.jpg);
 }
 
-.gradient{
-     position: absolute;
-     background-image: linear-gradient(0deg,#03fa03,transparent);
-     height: 100%;
-     width: 100%;
-     opacity: 0%;
+.card2{
+     background-image: url(images/css.jpg);
 }
 
-.info{
-     position: absolute;
-     top: 40%;
-     transform: translateY(-60%);
-     padding: 2rem;
-     margin-top: 3rem;
-
+.card3{
+     background-image: url(images/reactjs.jpg);
 }
 
-.text{
-     color: rgb(211,211,211);
+.card4{
+     background-image: url(images/js.png);
 }
 
+.card :hover{
+     transform: translateY(-10px);
+}
 
