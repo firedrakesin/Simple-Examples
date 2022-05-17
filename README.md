@@ -1,2 +1,3 @@
 # Simple-Examples
-Website that provides with codes and examples of basic html and css elements for beginner.
+Website that provides with codes and examples of basic html, css, javascript and react. 
+You can view the website by clicking here.
